@@ -775,7 +775,74 @@ Banner Style
 Services Style
 --------------------------------------------- 
 */
-
+.modal{
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content{
+  height: 350px;
+  width: 700px;
+  background: white;
+  padding:20px;
+  border-radius: 20px;
+}
+.popup-content .icon-close{
+  position: absolute;
+  left: 67%;
+  top: 30%;
+  width:50px;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+}
+.head{
+  text-align: center;
+}
+.Formlogin input{
+  outline: none;
+  padding:10px;
+  margin:10px 0px 10px 30px;
+  width:70%;
+  justify-content: center;
+}
+.Formlogin{
+  margin-left:110px;
+}
+.login{
+  cursor: pointer;
+}
+.btn-login{
+  border-radius: 15px;
+  background: red;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top:15px;
+  margin-left:29%;
+  font-family: inherit;
+  color: white;
+  border-color: white;
+}
+.footer-modal{
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  justify-content: center;
+}
+.img-footer-modal{
+  width: 50px;
+  cursor: pointer;
+  margin:0px 15px;
+}
+/* --------------------------------
+Style Popup
+-------------------------------- */
 .features {
   margin-top: -80px;
 }
@@ -1671,3 +1738,4 @@ body {
 @media (max-width: 1200px) {
   
 }
+
