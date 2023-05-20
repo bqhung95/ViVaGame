@@ -107,6 +107,7 @@ p {
 img {
   width: 100%;
   overflow: hidden;
+  height: 190px;
 }
 
 /* 
@@ -732,16 +733,18 @@ Banner Style
 
 .main-banner .right-image {
   position: relative;
+  width: auto;
 }
 
 .main-banner .right-image img {
   border-radius: 25px;
+  height: 500px;
 }
 
 .main-banner .right-image span.price {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   border-radius: 25px;
   background-color: #008af8;
   font-size: 22px;
@@ -775,6 +778,9 @@ Banner Style
 Services Style
 --------------------------------------------- 
 */
+.login{
+  cursor: pointer;
+}
 .modal{
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -784,62 +790,134 @@ Services Style
   justify-content: center;
   align-items: center;
   z-index: 1000;
+
 }
 .popup-content{
-  height: 350px;
-  width: 700px;
+  height: auto;
+  width: auto;
   background: white;
   padding:20px;
   border-radius: 20px;
+  position: relative;
+  display: flex;
+  padding: 0px 50px;
 }
 .popup-content .icon-close{
   position: absolute;
-  left: 67%;
-  top: 30%;
+  left:96%;
+  top: -17px; 
   width:50px;
   display: flex;
   cursor: pointer;
-  display: flex;
 }
-.head{
-  text-align: center;
+.icon-close img{
+  height: 50px;
 }
-.Formlogin input{
+.head-left{
+  width: 400px;
+  margin-right: 40px  ;
+}
+.head-right{
+  width: 200px;
+  margin-left: 50px;
+  padding-top:40px;
+}
+.head-right img{
+  width: 180px;
+  height:200px;
+  margin-left: 10px;
+}
+.form-left-login{
+  margin-top:40px;
+}
+
+.form-left-logintitle{
+  margin: 20px 0px;
+}
+.input-login{
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+.input-login input{
+  width: 100%;
+  padding:10px 20px;
+  border: none;
+  font-size: 14px;
+  color: black;
   outline: none;
-  padding:10px;
-  margin:10px 0px 10px 30px;
-  width:70%;
-  justify-content: center;
 }
-.Formlogin{
-  margin-left:110px;
-}
-.login{
+.input-login span{
+  position: absolute;
+  right: 0px;
+  top:10px;
+  z-index: 2;
+  color: #0071f8;
+  font-size: 14px;
+  display: inline-block;
   cursor: pointer;
 }
-.btn-login{
-  border-radius: 15px;
-  background: red;
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin-top:15px;
-  margin-left:29%;
-  font-family: inherit;
+.icon-email{
+  position:absolute;
+  top:10px;
+  /* color: #bfbfbf; */
+}
+.field-email input{
+  margin-left: 10px;
+}
+.icon-password{
+  position: absolute;
+  top:10px;
+  /* color: #bfbfbf; */
+}
+.bt-login button{
+  margin: 26px 0px 10px;
+  outline: none;
+  border-radius: 10px;
+  background: rgb(255, 66, 78);
+  padding: 13px 0px;
+  width: 100%;
   color: white;
-  border-color: white;
-}
-.footer-modal{
-  display: flex;
-  padding: 0px;
-  list-style: none;
-  justify-content: center;
-}
-.img-footer-modal{
-  width: 50px;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  margin:0px 15px;
 }
+.forgot-pass{
+  color: rgb(13, 92, 182);
+  font-size: 13px;
+  margin: 25px 0px 0px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+.create-account{
+  color: rgb(120, 120, 120);
+  font-size: 13px;
+  margin: 0px 0px 25px 0px;
+}
+.create-account span{
+  color: rgb(13, 92, 182);
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.content-right{
+  margin: 0px;
+  text-align: center;
+}
+.content-right h4{
+  margin: 0px 0px 5px;
+  color: rgb(11, 116, 229);
+  font-size: 17px;
+  font-weight: 500;
+  margin-top:13px;
+}
+.content-right span{
+  font-size:13px;
+  color: rgb(11, 116, 229);
+  font-weight: 500;
+  margin-top:20px;
+}
+
 /* --------------------------------
 Style Popup
 -------------------------------- */
@@ -915,15 +993,15 @@ Trending Style
 .trending .item span.price {
   text-align: right;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 5px;
   border-radius: 10px;
   background-color: #008af8;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
-  padding: 8px 15px 6px 15px;
+  padding: 5px 10px;
 }
 
 .trending .item .down-content {
@@ -935,12 +1013,14 @@ Trending Style
   color: #7a7a7a;
   margin-bottom: 5px;
   display: inline-block;
+  margin-left:25px;
 }
 
 .trending .item .down-content h4 {
   font-size: 17px;
   font-weight: 600;
   transition: all .3s;
+  text-align: center;
 }
 
 .trending .item .down-content a {
@@ -953,7 +1033,7 @@ Trending Style
   background-color: #ee626b;
   color: #fff;
   border-radius: 50%;
-  right: 25px;
+  right: 0px;
   bottom: 25px;
   transition: all .3s;
 }
@@ -1003,7 +1083,7 @@ Most Played Style
 }
 
 .most-played .item .down-content span.category {
-  font-size: 14px;
+  font-size: 15 px;
   color: #7a7a7a;
   margin-bottom: 5px;
   display: inline-block;
@@ -1016,6 +1096,7 @@ Most Played Style
 }
 
 .most-played .item .down-content a {
+  width: 107px;
   position: absolute;
   display: inline-block;
   text-align: center;
@@ -1025,7 +1106,7 @@ Most Played Style
   background-color: #ee626b;
   color: #fff;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   left: 50%;
@@ -1332,6 +1413,7 @@ Shop Page Style
   color: #7a7a7a;
   margin-bottom: 5px;
   display: inline-block;
+
 }
 
 .trending-box .item .down-content h4 {
